@@ -16,7 +16,7 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/notes)
  class-02    | [class-02](https://github.com/laith-401-advanced-javascript/notes/pull/2)
  class-03    | [class-03](https://github.com/laith-401-advanced-javascript/notes/pull/3)
  class-04    | [class-04](https://github.com/laith-401-advanced-javascript/notes/pull/4)
-  class-06    | [class-06](https://github.com/laith-401-advanced-javascript/notes/pull/5)
+  class-06    | [class-06](https://github.com/laith-401-advanced-javascript/api-server/pull/1)
 
 
 
