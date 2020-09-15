@@ -1,0 +1,23 @@
+{
+    "categories": [{
+        "name": "food1",
+        "display_name": "cheetos1",
+        "description": "hot",
+        "id": "2"
+    }],
+    "products": [{
+            "id": "1",
+            "category": "electronics",
+            "name": "laptop",
+            "display_name": "core-i7",
+            "description": "Dell laptop core-i7 "
+        },
+        {
+
+            "category": "food",
+            "name": "chips",
+            "display_name": "cheetos",
+            "description": "sweet potato chips"
+        }
+    ]
+}
