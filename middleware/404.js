@@ -8,7 +8,7 @@
  */
 // GLobal Middleware on the level of my app
 function notFoundHandler(req, res, next) {
-    res.status(404).send('404 Not Found');
+  res.status(404).send('404 Not Found');
 }
 
 module.exports = notFoundHandler;
