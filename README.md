@@ -19,17 +19,13 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/notes)
  class-04    | [class-04](https://github.com/laith-401-advanced-javascript/notes/pull/4)
   class-06    | [class-06](https://github.com/laith-401-advanced-javascript/api-server/pull/1)
   class-07   | [class-07](https://github.com/laith-401-advanced-javascript/api-server/pull/2)
-
+  class-08   | [class-08](https://github.com/laith-401-advanced-javascript/api-server/pull/3)
 
 
 
 # labs
 
-Phase 2 Requirements
-From a business requirements standpoint, nothing changes. json-server did a great job of serving as a “mock” API server for our application. In this phase ,we begin the transition towards making a “real” API server. Specifically, we will be replicating the same functionality json-server provided by writing our own server, using Express and Node.js
-
-As a reminder, here are our user stories each of which are to be executed for both categories and products data models
-
+From a business requirements standpoint, nothing changes. In this phase, we continue the transition towards making a “real” API server. Specifically, we will be migrating from in-memory data storage to using Mongo to store our data permanently, and modularizing our routes for flexibility. Through it all, we will be providing the same interface to our users. To the outside world, our API remains unchanged
 
 
 #### How to initialize/run your application (where applicable)
@@ -74,4 +70,8 @@ linkedIn :https://www.linkedin.com/in/laith-aldaree/
 
 #uml
 
+lab 7
 ![](assets/lab7uml.jpg)
+
+lab 8
+![](assets/lab8.jpg)
