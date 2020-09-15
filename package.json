@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest server.test.js --verbose --coverage",
+        "test": "jest  --verbose --coverage",
         "lint": "eslint '**/*.js'",
         "lint:js:fix": "eslint './**/*.js' --ignore-pattern node_modules/ --fix"
     },
