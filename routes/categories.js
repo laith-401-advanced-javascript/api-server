@@ -1,5 +1,4 @@
 'use strict';
-
 const express = require('express');
 
 const categories = require('../lib/models/categories/categories.collection.js');
@@ -18,10 +17,10 @@ router.patch('/categories/:id', patchCategories);
  * 
  */
 function getCategories(req, res, next) {
-    const id = req.params.id;
-    categories.get(id).then(data => {
-        res.status(200).send(data);
-    }).catch(next)
+  const id = req.params.id;
+  categories.get(id).then(data => {
+    res.status(200).send(data);
+  }).catch(next);
 } // end of api get categories 
 
 /**
@@ -29,43 +28,43 @@ function getCategories(req, res, next) {
  * 
  */
 function postCategories(req, res, next) {
-    console.log('req.body >>>>>> ', req.body);
-    categories.create(req.body).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  console.log('req.body >>>>>> ', req.body);
+  categories.create(req.body).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api post categories 
 
 function putCategories(req, res, next) {
-    const id = req.params.id;
-    categories.update(id, req.body).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  const id = req.params.id;
+  categories.update(id, req.body).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api put categories by ID 
 
 function deleteCategories(req, res, next) {
-    let idDelete = req.params.id;
-    categories.delete(idDelete).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  let idDelete = req.params.id;
+  categories.delete(idDelete).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api delete categories by ID
 
 function patchCategories(req, res, next) {
-    const id = req.params.id;
-    categories.update(id, req.body).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  const id = req.params.id;
+  categories.update(id, req.body).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api patch categories by ID 
 
 

@@ -1,5 +1,4 @@
 'use strict';
-
 const express = require('express');
 
 const products = require('../lib/models/products/products.collection.js');
@@ -17,10 +16,10 @@ router.patch('/products/:id', patchProduct);
  * 
  */
 function getProduct(req, res, next) {
-    const id = req.params.id;
-    products.get(id).then(data => {
-        res.status(200).send(data);
-    }).catch(next)
+  const id = req.params.id;
+  products.get(id).then(data => {
+    res.status(200).send(data);
+  }).catch(next);
 } // end of api get Products 
 
 /**
@@ -28,43 +27,43 @@ function getProduct(req, res, next) {
  * 
  */
 function postProduct(req, res, next) {
-    console.log('req.body >>>>>> ', req.body);
-    products.create(req.body).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  console.log('req.body >>>>>> ', req.body);
+  products.create(req.body).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api post Products 
 
 function putProduct(req, res, next) {
-    const id = req.params.id;
-    products.update(id, req.body).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  const id = req.params.id;
+  products.update(id, req.body).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api put Products by ID 
 
 function deleteProduct(req, res, next) {
-    let idDelete = req.params.id;
-    products.delete(idDelete).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  let idDelete = req.params.id;
+  products.delete(idDelete).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api delete Products by ID
 
 function patchProduct(req, res, next) {
-    const id = req.params.id;
-    products.update(id, req.body).then(data => {
-        res.status(200).send(data);
-    }).catch(err => {
-        console.log(err);
-        next(err);
-    })
+  const id = req.params.id;
+  products.update(id, req.body).then(data => {
+    res.status(200).send(data);
+  }).catch(err => {
+    console.log(err);
+    next(err);
+  });
 } // end of api patch Products by ID 
 
 
