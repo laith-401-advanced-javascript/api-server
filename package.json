@@ -1,0 +1,36 @@
+{
+    "name": "api-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest  --verbose --coverage",
+        "lint": "eslint '**/*.js'",
+        "lint:js:fix": "eslint './**/*.js' --ignore-pattern node_modules/ --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/laith-401-advanced-javascript/api-server.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/laith-401-advanced-javascript/api-server/issues"
+    },
+    "homepage": "https://github.com/laith-401-advanced-javascript/api-server#readme",
+    "dependencies": {
+        "@code-fellows/supergoose": "^1.0.11",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "jest": "^26.4.2",
+        "json-server": "^0.16.1",
+        "mongoose": "^5.10.5",
+        "morgan": "^1.10.0",
+        "supertest": "^4.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.9.0"
+    }
+}
